@@ -1,0 +1,63 @@
+.attribution { font-size: 11px; text-align: center; }
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(234, 29%, 20%);
+}
+
+.Card{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 5%;
+    padding: 2%;
+}
+
+.stuff{
+    max-height: 100vp;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stuff h1{
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.stuff p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.stuff ul{
+}
+
+.stuff label{
+    display: block;
+    
+}
+
+.stuff input{
+    display: block;
+    height: 40px;
+    border-radius: 5%;
+    width: 30vb;
+}
+
+#email{
+    border-width: 1px;
+}
+
+#submit{
+    background-image: linear-gradient(to right,hsl(0, 100%, 64%),hsl(14, 89%, 60%));
+    color: white;
+    border-width: 0px;
+}
