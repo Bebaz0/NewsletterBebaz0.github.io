@@ -3,6 +3,7 @@
 .attribution a { color: hsl(228, 45%, 44%); }
 
 body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: flex;
     height: 100vh;
     justify-content: center;
@@ -16,11 +17,13 @@ body{
     background-color: white;
     border-radius: 5%;
     padding: 2%;
+    flex-wrap: wrap-reverse;
 }
 
 .stuff{
     max-height: 100vp;
     max-width: 50%;
+    min-width: min-content;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,36 +31,79 @@ body{
 }
 
 .stuff h1{
+    margin-left: -4%;
     font-weight: 700;
     font-size: 50px;
 }
 
-.stuff p{
+.head2{
+    margin-top: 0%;
+    margin-left: 8%;
     font-size: 16px;
     font-weight: 400;
 }
 
+.stuff ul p{
+    display: inline;
+}
+
 .stuff ul{
+    margin-left: -10%;
+    margin-top: 0%;
+    margin-bottom: 10%;
+    list-style-image: none;
+    list-style-type: none;
+    
+
+}
+
+.stuff ul li{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: -5%;
 }
 
 .stuff label{
-    display: block;
-    
+    font-size: smaller;
+    display: inline;
 }
 
 .stuff input{
+    cursor: pointer;
     display: block;
-    height: 40px;
+    height: 50px;
     border-radius: 5%;
     width: 30vb;
-}
-
-#email{
     border-width: 1px;
+    box-sizing: border-box;
+    padding: 6%;
 }
 
 #submit{
-    background-image: linear-gradient(to right,hsl(0, 100%, 64%),hsl(14, 89%, 60%));
+    cursor: pointer;
+    background-color:hsl(235, 18%, 26%);
     color: white;
     border-width: 0px;
+    display: block;
+    height: 50px;
+    border-radius: 5%;
+    width: 30.5vb;
+}
+
+#submit:hover{
+    background-image: linear-gradient(to right,hsl(0, 100%, 64%),hsl(14, 89%, 60%));
+}
+
+#labels{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#labels p{
+    font-size: smaller;
+    color:  hsl(4, 100%, 67%);
 }
