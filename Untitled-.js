@@ -1,6 +1,7 @@
 
 let errorMsg = document.getElementById("error")
-let emailform = document.getElementById("form");
+let emailform = document.getElementById("form")
+
 
 // Add event listener for form submission
 emailform.addEventListener("submit", (e) => {
@@ -14,6 +15,8 @@ emailform.addEventListener("submit", (e) => {
 
     if (validRegex.test(emailValue)) {
         console.log("Email is valid:", emailValue);
+        window.location.href = "success.html?email=" + encodeURIComponent(emailValue);
+    
 
     } else {
         console.error("Invalid email:", emailValue);
@@ -22,3 +25,4 @@ emailform.addEventListener("submit", (e) => {
         email.style.color = "red"
     }
 });
+

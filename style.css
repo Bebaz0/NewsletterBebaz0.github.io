@@ -26,12 +26,11 @@ body{
     min-width: min-content;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
 }
 
 .stuff h1{
-    margin-left: -4%;
+    margin-left: 8%;
     font-weight: 700;
     font-size: 50px;
 }
@@ -48,7 +47,7 @@ body{
 }
 
 .stuff ul{
-    margin-left: -10%;
+    margin-left: -3%;
     margin-top: 0%;
     margin-bottom: 10%;
     list-style-image: none;
@@ -66,22 +65,25 @@ body{
 }
 
 .stuff label{
+    margin-left: 8%;
     font-size: smaller;
     display: inline;
 }
 
 .stuff input{
+    margin-left: 8%;
     cursor: pointer;
     display: block;
     height: 50px;
     border-radius: 5%;
-    width: 30vb;
+    width: 33vb;
     border-width: 1px;
     box-sizing: border-box;
     padding: 6%;
 }
 
 #submit{
+    margin-left: 8%;
     cursor: pointer;
     background-color:hsl(235, 18%, 26%);
     color: white;
@@ -89,7 +91,7 @@ body{
     display: block;
     height: 50px;
     border-radius: 5%;
-    width: 30.5vb;
+    width: 33vb;
 }
 
 #submit:hover{
@@ -107,3 +109,42 @@ body{
     font-size: smaller;
     color:  hsl(4, 100%, 67%);
 }
+
+.sucesstext{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 8%;
+    margin-top: 8%;
+}
+
+.sucesstext h1{
+    width: 80%;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+#dismiss{
+    cursor: pointer;
+    background-color:hsl(235, 18%, 26%);
+    color: white;
+    border-width: 0px;
+    display: block;
+    height: 50px;
+    border-radius: 5%;
+    width: 36vb;
+}
+
+#dismiss:hover{
+    background-image: linear-gradient(to right,hsl(0, 100%, 64%),hsl(14, 89%, 60%));
+}
+
+#thankstext{
+    margin-top: 0%;
+    font-size: 15px ;
+   max-width: 38vb;
+   margin-bottom: 10%;
+}
+
